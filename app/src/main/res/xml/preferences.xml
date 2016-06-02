@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences">
+
+    <SwitchPreference android:title="Update Library"
+        android:defaultValue="true"
+        android:summary="Refresh database after Sync"
+        android:key="update-library" />
+
+    <SwitchPreference android:title="Order Songs (using Date)"
+        android:defaultValue="false"
+        android:summary="Add date tags so sorting by date puts them in order of likes"
+        android:key="order-songs" />
+
+    <EditTextPreference android:title="Path to Download"
+        android:summary="Enter the desired download path"
+        android:defaultValue="/storage/sdcard0/Music/"
+        android:key="download-path" />
+
+    <EditTextPreference android:title="Username"
+        android:summary="Enter your SoundCloud Username"
+        android:key="soundcloud-username" />
+
+    <EditTextPreference android:title="Password"
+        android:summary="Enter your SoundCloud Password"
+        android:key="soundcloud-password"
+        android:inputType="textPassword" />
+
+    <EditTextPreference android:title="Account to Sync"
+        android:summary="Account to download likes from"
+        android:key="soundcloud-syncaccount" />
+
+</PreferenceScreen>
